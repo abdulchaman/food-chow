@@ -1,0 +1,167 @@
+.funfacts .row > div {
+    width: 23%;
+}
+.restaurant-searching {
+  float: left;
+  width: 100%;
+  padding: 0 100px 100px;
+}
+.restaurant-searching-inner {
+  display: inline-block;
+  max-width: 992px;
+  width: 100%;
+}
+.restaurant-searching-inner > h2 {
+  font-family: Poppins;
+  color: #fff;
+  font-size: 50px;
+  max-width: 70%;
+  display: inline-block;
+  line-height: 55px;
+  margin-bottom: 0;
+  font-weight: 700;
+
+  -webkit-text-shadow: 0 5px 0 rgba(0,0,0,.38);
+  -ms-text-shadow: 0 5px 0 rgba(0,0,0,.38);
+  -o-text-shadow: 0 5px 0 rgba(0,0,0,.38);
+  text-shadow: 0 5px 0 rgba(0,0,0,.38);
+}
+.restaurant-searching-inner > h2 span{
+  font-family: Great Vibes;
+  font-size: 60px;
+  font-weight: normal;
+}
+.restaurant-search-form {
+    display: inline-block;
+    margin: 40px auto 0;
+    width: 100%;
+    padding: 18px;
+  
+  -webkit-box-shadow: 0 5px 0 rgba(0,0,0,0.38);
+  -ms-box-shadow: 0 5px 0 rgba(0,0,0,0.38);
+  -o-box-shadow: 0 5px 0 rgba(0,0,0,0.38);
+  box-shadow: 0 5px 0 rgba(0,0,0,0.38);
+  
+}
+.input-field,
+.textarea-field {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  height: 52px;
+  text-align: left;
+}
+.input-field > select{
+    width: 90%;
+}
+.input-field > input,
+.textarea-field > textarea {
+  height: 100%;
+  padding: 15px 38px;
+  font-size: 11.7px;
+  font-family: lato;
+  color: #a2a2a2;
+  width: 100%;
+}
+.input-field > i,
+.textarea-field > i {
+  color: #a2a2a2;
+  position: absolute;
+  top: 50%;
+  font-size: 10.8px;
+}
+.input-field > i.fa-map-marker {left: 25px;}
+.input-field > i.fa-location-arrow {
+  color: #c7c7c7;
+  right: 25px;
+}
+.restaurant-search-form button {
+  color: #fff;
+  font-weight: 700;
+  font-family: Poppins;
+  padding: 15.9px 20px;
+  width: 100%;
+  font-size: 13.5px;
+  text-align: center;
+}
+.restaurant-search-form button:hover{background: #fff !important; color: #2a2a2a;}
+.restaurant-search-form button:focus {color: #2a2a2a;}
+.funfacts {
+  display: flex;
+    margin: 20px auto 0 0;
+    width: 100%;
+}
+.fact-box {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.fact-box > i {
+    background-color: #fff;
+    display: inline-block;
+    height: 82px;
+    line-height: 82px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 82px;
+}
+.fact-inner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: left;
+}
+.fact-inner > strong {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 30px;
+}
+.fact-inner > h5 {
+    color: #aeaeae;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+}
+.left-building-mockup {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: .1;
+}
+.right-building-mockup {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: .1;
+}
+.left-scooty-mockup {
+  position: absolute;
+  left: -50px;
+  bottom: -120px;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .6s linear;
+  -ms-transition: all .6s linear;
+  -o-transition: all .6s linear;
+  transition: all .6s linear;
+}
+.left-scooty-mockup.easein {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.bottom-clouds-mockup {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
