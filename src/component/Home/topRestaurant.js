@@ -1,38 +1,43 @@
 import React, { Component } from "react";
-import "./topRestaurant.css"
+import "./topRestaurant.css";
 import { Link } from "react-router-dom";
-const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant";
+const url = "https://zomatoajulypi.herokuapp.com/quicksearch";
 class TopRestaurant extends Component {
   constructor() {
     super();
     this.state = {
-      restaurants: "",
+      mealType: "",
     };
   }
   renderRestaurant = (data) => {
     if (data) {
       return data.slice(0, 6).map((item, index) => {
         return (
-          <li
-            className="wow bounceIn"
-            data-wow-delay={`${index}` * 0.5 + "s"}
-            key={item.restaurant_id}
-          >
-            <div className="top-restaurant">
-              <Link className="brd-rd50" to="" title="Restaurant 1">
-                <img src={item.restaurant_thumb} alt={item.restaurant_name} />
-              </Link>
-            </div>
-          </li>
+          <Link to={`/listing/${item.mealtype_id}`}>
+            <li
+              className="wow bounceIn"
+              data-wow-delay={`${index}` * 0.5 + "s"}
+              key={item.restaurant_id}
+            >
+              <div className="top-restaurant">
+                  <div className="top-restaurant-img">
+                  <img src={item.meal_image} alt={item.mealtype} />
+                  </div>
+                  
+                  <h4>{item.mealtype}</h4>
+              
+              </div>
+            </li>
+          </Link>
         );
       });
     }
   };
   componentDidMount() {
-    fetch(`${restUrl}`, { method: "GET" })
+    fetch(`${url}`, { method: "GET" })
       .then((res) => res.json())
       .then((data) => {
-        this.setState({ restaurants: data });
+        this.setState({ mealType: data });
       });
   }
   render() {
@@ -56,7 +61,7 @@ class TopRestaurant extends Component {
                 </div>
                 <div className="top-restaurants-wrapper">
                   <ul className="restaurants-wrapper style2">
-                    {this.renderRestaurant(this.state.restaurants)}
+                    {this.renderRestaurant(this.state.mealType)}
                   </ul>
                 </div>
               </div>

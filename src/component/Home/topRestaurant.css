@@ -12,6 +12,8 @@
     padding: 0 30px;
     list-style: none;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
   .restaurants-wrapper > li {
       float: left;
@@ -32,7 +34,6 @@
       line-height: 155px;
       margin-bottom: 0;
       width: 100%;
-      overflow: hidden;
     border-radius: 50%
   }
   .top-restaurant > a img{
@@ -90,4 +91,18 @@
   .top-restaurants-carousel .owl-dots > div.active:after {
     bottom: -6px;
     opacity: 1;
+  }
+  .top-restaurant-img{
+    border: 3px solid #f1f1f1;
+    box-shadow: 0 11px 0 0 rgb(0 0 0 / 2%);
+    height: 155px;
+    line-height: 150px;
+    width: 155px;
+    border-radius:50%;
+  }
+  .top-restaurant-img img{
+    border-radius:50%;
+    object-fit:cover;
+    width:100%;
+    height:100%;
   }

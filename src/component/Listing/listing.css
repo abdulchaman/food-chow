@@ -1,0 +1,17 @@
+.mainListing{
+    margin: 5%;
+}
+.listingContent{
+    width: 70%;
+}
+.filter{
+    width:20%;
+    height:600px;
+    border:1px solid black;
+}
+.listingItem{
+    padding: 20px;
+}
+.meal-name{
+    display: inline-block;
+}
